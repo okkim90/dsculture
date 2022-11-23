@@ -1,0 +1,27 @@
+@import "./variable";
+
+
+
+// responsive - mediaquery
+@mixin tablet {
+    @media (max-width: #{$breakpoint-t}) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: #{$breakpoint-m}) {
+        @content;
+    }
+}
+
+
+
+// colors
+$c_key : map-get($colors, key);
+
+@each $key, $color in $colors {
+    .fc_#{$key} {
+        color: $color;
+    }
+}
