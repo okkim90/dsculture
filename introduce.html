@@ -45,7 +45,7 @@
                         <li class="card_item col">
                             <div class="card_box">
                                 <div class="card_img ty_radius">
-                                    <img src="https://picsum.photos/800/520" alt="">
+                                    <img src="./images/ralral.jpeg" alt="">
                                 </div>
                                 <div class="card_txt">
                                     <h3 class="card_tit">CSR 사업 브랜딩</h3>
@@ -56,7 +56,7 @@
                         <li class="card_item col">
                             <div class="card_box">
                                 <div class="card_img ty_radius">
-                                    <img src="https://picsum.photos/800/520" alt="">
+                                    <img src="./images/ralral.jpeg" alt="">
                                 </div>
                                 <div class="card_txt">
                                     <h3 class="card_tit">교육 콘텐츠 개발</h3>
@@ -67,7 +67,7 @@
                         <li class="card_item col">
                             <div class="card_box">
                                 <div class="card_img ty_radius">
-                                    <img src="https://picsum.photos/800/520" alt="">
+                                    <img src="./images/ralral.jpeg" alt="">
                                 </div>
                                 <div class="card_txt ty1">
                                     <h3 class="card_tit">사업 수행</h3>
@@ -175,39 +175,7 @@
 
 
 
-        /* 스크롤 이벤트 */
-        var vh = $(window).height();
-        $.fn.isInViewport = function() {
-            var elementTop = $(this).offset().top;
-            var elementBottom = elementTop + $(this).outerHeight();
-            var viewportTop = $(window).scrollTop();
-            var viewportBottom = viewportTop + $(window).height();
-            return (elementBottom > viewportTop + (vh/12))  && (elementTop < viewportBottom - (vh/12)) ;
-        };
 
-
-        $(window).on('load resize',function(){
-            vh = $(window).height();
-        });
-        $(window).on('load resize scroll',function(){
-            $('.aniBox').each(function(){
-                if($(this).isInViewport()){
-                    $(this).addClass('gogo');
-                }
-            });
-            $('.count_wrap').each(function(){
-                if($(this).isInViewport() && !$(this).hasClass('finish')){
-                    count_wrap($(this).find('.count_box'));
-                    $(this).addClass('finish');
-                }
-            });
-        });
-
-        $('.aniBox').each(function(){
-            if($(this).isInViewport()){
-                $(this).addClass('gogo');
-            }
-        });
     </script>
 </body>
 </html>

@@ -3,6 +3,12 @@
 
 
 // responsive - mediaquery
+@mixin pc_bm {
+    @media (max-width: #{$breakpoint-pc_bm}) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: #{$breakpoint-t}) {
         @content;
