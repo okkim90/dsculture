@@ -16,6 +16,9 @@
     &.ani_right {
         opacity: 0;
         transform: translateX(100px);
+        @include mobile {
+            transform: translateX(40px);
+        }
         &.gogo {
             opacity: 1;
             transform: translateX(0);
@@ -25,6 +28,9 @@
     &.ani_left {
         opacity: 0;
         transform: translateX(-100px);
+        @include mobile {
+            transform: translateX(-40px);
+        }
         &.gogo {
             opacity: 1;
             transform: translateX(0);
@@ -34,6 +40,9 @@
     &.ani_top {
         opacity: 0;
         transform: translateY(-100px);
+        @include mobile {
+            transform: translateY(-40px);
+        }
         &.gogo {
             opacity: 1;
             transform: translateY(0);
@@ -43,6 +52,9 @@
     &.ani_bot {
         opacity: 0;
         transform: translateY(100px);
+        @include mobile {
+            transform: translateY(40px);
+        }
         &.gogo {
             opacity: 1;
             transform: translateY(0);

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <title>과학문화사업</title>
+    <!--스타일 공통-->
+    <link rel="stylesheet" href="./common/css/common.css">
+
+    <!--js 공통-->
+    <script type="text/javascript" src="./common/js/jquery.min.js"></script>
+    <script type="text/javascript" src="./common/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://kit.fontawesome.com/a9123cc962.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./common/js/swiper.min.js"></script>
+    <script type="text/javascript" src="./common/js/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- header -->
+        <div id="header" class="header sub">
+            <a href="" class="logo">
+                <h1 class="blind">동아사이언스 과학문화사업</h1>
+            </a>
+            <button type="button" class="btn_nav">
+                <span class="blind">전체메뉴 토글버튼</span>
+                <div class="bar_box">
+                    <span class="bar bar_top"></span>
+                    <span class="bar bar_mid"></span>
+                    <span class="bar bar_bot"></span>
+                </div>
+            </button>
+            <nav class="nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="" class="nav_link">소개</a></li>
+                    <li class="nav_item"><a href="" class="nav_link "> 파트너십</a></li>
+                    <li class="nav_item has_dep2">
+                        <a href="" class="nav_link">사업영역</a>
+                        <button type="button" class="nav_btn_dep2">사업영역</button>
+                        <div class="nav_dep2">
+                            <ul class="nav_dep2_list">
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">창의융합과학교육</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">디지털 리터러시 교육</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">차세대 ESG리더 양성</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">주니어 공학교실</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="nav_item"><a href="" class="nav_link on">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- //header -->
+        <div id="container" class="container sub pb0">
+            <section class="sub_sec ty_contact">
+                <div class="inner">
+                    <div class="tit_set ty_1 aniBox ani_bot">
+                        <h2 class="tit1">문의</h2>
+                    </div>
+                    <form action="" method="" enctype="">
+                        <div class="contact_form aniBox ani_bot">
+                            <ul class="contact_form_list">
+                                <li class="contact_form_item">
+                                    <label for="" class="contact_form_tit">성명</label>
+                                    <input type="text" name="name" class="contact_form_input" placeholder="이름을 입력해주세요.">
+                                </li>
+                                <li class="contact_form_item">
+                                    <label for="" class="contact_form_tit">소속</label>
+                                    <input type="text" name="company" class="contact_form_input" placeholder="소속을 입력해주세요.">
+                                </li>
+                                <li class="contact_form_item">
+                                    <label for="" class="contact_form_tit">이메일</label>
+                                    <input type="email" name="email" class="contact_form_input" placeholder="이메일을 입력해주세요.">
+                                </li>
+                                <li class="contact_form_item">
+                                    <label for="" class="contact_form_tit">연락처</label>
+                                    <input type="tel" name="tel" class="contact_form_input" placeholder="연락처를 입력해주세요.">
+                                </li>
+                                <li class="contact_form_item">
+                                    <label for="" class="contact_form_tit">문의내용</label>
+                                    <textarea name="comments" id="" class="contact_form_ta" placeholder="내용을 입력해주세요."></textarea>
+                                </li>
+                            </ul>
+                            <div class="btn_area taC ty_bot">
+                                <input type="submit" name="submit" class="btn btn_submit" value="문의하기">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+        <!-- 과문홈 하단 info -->
+        <div class="dsc_bot">
+            <div class="inner">
+                <ul class="dsc_bot_info">
+                    <li class="dsc_bot_info_item">
+                        <strong>동아사이언스 과학문화팀</strong>
+                        <p>기업 CSR, ESG, 교육사업 문의</p>
+                    </li>
+                    <li class="dsc_bot_info_item">
+                        <strong>전화번호</strong>
+                        <p>02-3148-0782</p>
+                    </li>
+                    <li class="dsc_bot_info_item">
+                        <strong>이메일</strong>
+                        <p>whitesea@donga.com</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <button type="button" class="btn_top" onclick="to_top()"><span class="blind">상단으로 이동</span></button>
+        <!-- // 과문홈 하단 info -->
+    </div>
+    <script>
+        $(function(){
+            const bm_kw = $('.bm_kw_wrap');
+            const bm_kw_c = $('.bm_kw');
+            let hd_h = $('#header').outerHeight();
+            let bm_pos = $('.bm_kw_sec').offset().top;
+            $(window).on('load scroll resize',function(){
+                hd_h = $('#header').outerHeight();
+                bm_pos = $('.bm_kw_sec').offset().top;
+                console.log(bm_pos);
+
+                if($(this).scrollTop() > bm_pos - hd_h - 20){
+                    bm_kw.addClass('fixed');
+                }else{
+                    bm_kw.removeClass('fixed');
+                }
+            });
+
+            $('.btn_bm_kw').on('click',function(){
+                bm_kw_c.toggleClass('on');
+            });
+            $('.tag_item').on('click',function(){
+                bm_kw_c.addClass('on');
+            });
+        });
+    </script>
+</body>
+</html>

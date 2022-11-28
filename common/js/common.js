@@ -13,6 +13,10 @@ $.fn.isInViewport = function() {
     return (elementBottom > viewportTop + (vh/12))  && (elementTop < viewportBottom - (vh/12)) ;
 };
 
+$(function(){
+
+
+
 
 $(window).on('load resize',function(){
     vh = $(window).height();
@@ -35,4 +39,34 @@ $('.aniBox').each(function(){
     if($(this).isInViewport()){
         $(this).addClass('gogo');
     }
+});
+
+
+
+
+$('.nav_btn_dep2').on('click',function(){
+    console.log('asdfasdf');
+    if($(this).parents('.nav_item').hasClass('on')){
+        $(this).parents('.nav_item').removeClass('on');
+        //$(this).parents('.nav_item').find('.nav_dep2').slideUp(200);
+    }else{
+        $(this).parents('.nav_item').addClass('on');
+        //$(this).parents('.nav_item').find('.nav_dep2').slideDown(200);
+    }
+
+});
+
+$('.btn_nav').on('click',function(){
+    if($(this).hasClass('on')){
+        $('.header').removeClass('on');
+        $(this).removeClass('on');
+        $('.nav').removeClass('on');
+    }else{
+        $('.header').addClass('on');
+        $(this).addClass('on');
+        $('.nav').addClass('on');
+    }
+
+});
+
 });

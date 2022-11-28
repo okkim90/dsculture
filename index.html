@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>기사콘</title>
+    <title>과학문화사업</title>
     <!--스타일 공통-->
     <link rel="stylesheet" href="./common/css/common.css">
 
@@ -17,19 +17,41 @@
 </head>
 <body class="body_main">
     <div id="wrap">
+        <!-- header -->
         <div id="header" class="header">
             <a href="" class="logo">
                 <h1 class="blind">동아사이언스 과학문화사업</h1>
             </a>
+            <button type="button" class="btn_nav">
+                <span class="blind">전체메뉴 토글버튼</span>
+                <div class="bar_box">
+                    <span class="bar bar_top"></span>
+                    <span class="bar bar_mid"></span>
+                    <span class="bar bar_bot"></span>
+                </div>
+            </button>
             <nav class="nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="" class="nav_link">소개</a></li>
-                    <li class="nav_item"><a href="" class="nav_link"> 파트너십</a></li>
-                    <li class="nav_item"><a href="" class="nav_link">사업영역</a></li>
+                    <li class="nav_item"><a href="" class="nav_link "> 파트너십</a></li>
+                    <li class="nav_item has_dep2">
+                        <a href="" class="nav_link">사업영역</a>
+                        <button type="button" class="nav_btn_dep2">사업영역</button>
+                        <div class="nav_dep2">
+                            <ul class="nav_dep2_list">
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">창의융합과학교육</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">디지털 리터러시 교육</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">차세대 ESG리더 양성</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">주니어 공학교실</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
                     <li class="nav_item"><a href="" class="nav_link">문의</a></li>
                 </ul>
             </nav>
         </div>
+        <!-- //header -->
         <div id="container" class="container">
             <div class="bg_box">
                 <video autoplay muted loop>

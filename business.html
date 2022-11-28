@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <title>기사콘</title>
+    <title>과학문화사업</title>
     <!--스타일 공통-->
     <link rel="stylesheet" href="./common/css/common.css">
 
@@ -17,211 +17,235 @@
 </head>
 <body>
     <div id="wrap">
-         <!-- header -->
+        <!-- header -->
         <div id="header" class="header sub">
             <a href="" class="logo">
                 <h1 class="blind">동아사이언스 과학문화사업</h1>
             </a>
+            <button type="button" class="btn_nav">
+                <span class="blind">전체메뉴 토글버튼</span>
+                <div class="bar_box">
+                    <span class="bar bar_top"></span>
+                    <span class="bar bar_mid"></span>
+                    <span class="bar bar_bot"></span>
+                </div>
+            </button>
             <nav class="nav">
                 <ul class="nav_list">
                     <li class="nav_item"><a href="" class="nav_link">소개</a></li>
                     <li class="nav_item"><a href="" class="nav_link "> 파트너십</a></li>
-                    <li class="nav_item"><a href="" class="nav_link on">사업영역</a></li>
+                    <li class="nav_item has_dep2">
+                        <a href="" class="nav_link on">사업영역</a>
+                        <button type="button" class="nav_btn_dep2">사업영역</button>
+                        <div class="nav_dep2">
+                            <ul class="nav_dep2_list">
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">창의융합과학교육</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">디지털 리터러시 교육</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">차세대 ESG리더 양성</a></li>
+                                <li class="nav_dep2_item"><a href="" class="nav_dep2_link">주니어 공학교실</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
                     <li class="nav_item"><a href="" class="nav_link">문의</a></li>
                 </ul>
             </nav>
         </div>
-         <!-- //header -->
+        <!-- //header -->
         <div id="container" class="container sub">
             <section class="sub_sec">
-                <div class="inner bm_inner">
-                    <div class="tit_set aniBox ani_bot">
-                        <h2 class="tit1">사업영역</h2>
-                    </div>
-                    <div class="bm_kw_sec">
-                        <div class="bm_kw_wrap">
-                            <div class="bm_kw">
-                                <button class="btn_bm_kw" type="button"><span class="blind">키워드 레이어 토글</span></button>
-                                <ul class="bm_kw_list">
-                                    <li class="bm_kw_item">
-                                        <h3 class="bm_kw_tit">
-                                            <i class="bm_kw_ico"><img src="./images/icon-school.svg" alt=""></i>
-                                            찾아가는 교육
-                                        </h3>
-                                        <div class="bm_kw_desc">
-                                            과학, SW∙AI, 환경, 메이커, 천문, 진로 등 기업의 컬러에 맞는 프로그램으로 학교∙기관에 찾아가는 교육 기획
-                                        </div>
-                                    </li>
-                                    <li class="bm_kw_item">
-                                        <h3 class="bm_kw_tit">
-                                            <i class="bm_kw_ico"><img src="./images/icon-pencil.svg" alt=""></i>
-                                            교재·교구개발
-                                        </h3>
-                                        <div class="bm_kw_desc">
-                                            아동 및 청소년들의 흥미를 높일 수 있는 기업 및 기관 맞춤형 교재·교구 개발
-                                        </div>
-                                    </li>
-                                    <li class="bm_kw_item">
-                                        <h3 class="bm_kw_tit">
-                                            <i class="bm_kw_ico"><img src="./images/icon-camp.svg" alt=""></i>
-                                            과학 캠프·페스티벌
-                                        </h3>
-                                        <div class="bm_kw_desc">
-                                            과학, IT, 환경 분야, 진로캠프, 전문연사를 초청하여 진행하는 과학 페스티벌 기획·운영
-                                        </div>
-                                    </li>
-                                    <li class="bm_kw_item">
-                                        <h3 class="bm_kw_tit">
-                                            <i class="bm_kw_ico"><img src="./images/icon-talent.svg" alt=""></i>
-                                            임직원 재능기부
-                                        </h3>
-                                        <div class="bm_kw_desc">
-                                            임직원 멘토링 커리큘럼 개발 및 교육 연수, DIY 물품 제작 등 다양한 봉사 프로그램 개발
-                                        </div>
-                                    </li>
-                                    <li class="bm_kw_item">
-                                        <h3 class="bm_kw_tit">
-                                            <i class="bm_kw_ico"><img src="./images/icon-trophy.svg" alt=""></i>
-                                            공모전·경진대회
-                                        </h3>
-                                        <div class="bm_kw_desc">
-                                            참가자들이 갈고 닦은 기량을 선보이고 실력을 검증할 수 있는 공모전·대회 기획 및 운영
-                                        </div>
-                                    </li>
-                                </ul>
+                <div class="bm_wrap">
+                    <div class="inner bm_inner">
+                        <div class="tit_set ty_1 aniBox ani_bot">
+                            <h2 class="tit1">사업영역</h2>
+                        </div>
+                        <div class="bm_kw_sec">
+                            <div class="bm_kw_wrap ">
+                                <div class="bm_kw_inner aniBox ani_right">
+                                    <div class="bm_kw ">
+                                        <button class="btn_bm_kw" type="button"><span class="blind">키워드 레이어 토글</span></button>
+                                        <ul class="bm_kw_list">
+                                            <li class="bm_kw_item">
+                                                <h3 class="bm_kw_tit">
+                                                    <i class="bm_kw_ico"><img src="./images/icon-school.svg" alt=""></i>
+                                                    찾아가는 교육
+                                                </h3>
+                                                <div class="bm_kw_desc">
+                                                    과학, SW∙AI, 환경, 메이커, 천문, 진로 등 기업의 컬러에 맞는 프로그램으로 학교∙기관에 찾아가는 교육 기획
+                                                </div>
+                                            </li>
+                                            <li class="bm_kw_item">
+                                                <h3 class="bm_kw_tit">
+                                                    <i class="bm_kw_ico"><img src="./images/icon-pencil.svg" alt=""></i>
+                                                    교재·교구개발
+                                                </h3>
+                                                <div class="bm_kw_desc">
+                                                    아동 및 청소년들의 흥미를 높일 수 있는 기업 및 기관 맞춤형 교재·교구 개발
+                                                </div>
+                                            </li>
+                                            <li class="bm_kw_item">
+                                                <h3 class="bm_kw_tit">
+                                                    <i class="bm_kw_ico"><img src="./images/icon-camp.svg" alt=""></i>
+                                                    과학 캠프·페스티벌
+                                                </h3>
+                                                <div class="bm_kw_desc">
+                                                    과학, IT, 환경 분야, 진로캠프, 전문연사를 초청하여 진행하는 과학 페스티벌 기획·운영
+                                                </div>
+                                            </li>
+                                            <li class="bm_kw_item">
+                                                <h3 class="bm_kw_tit">
+                                                    <i class="bm_kw_ico"><img src="./images/icon-talent.svg" alt=""></i>
+                                                    임직원 재능기부
+                                                </h3>
+                                                <div class="bm_kw_desc">
+                                                    임직원 멘토링 커리큘럼 개발 및 교육 연수, DIY 물품 제작 등 다양한 봉사 프로그램 개발
+                                                </div>
+                                            </li>
+                                            <li class="bm_kw_item">
+                                                <h3 class="bm_kw_tit">
+                                                    <i class="bm_kw_ico"><img src="./images/icon-trophy.svg" alt=""></i>
+                                                    공모전·경진대회
+                                                </h3>
+                                                <div class="bm_kw_desc">
+                                                    참가자들이 갈고 닦은 기량을 선보이고 실력을 검증할 수 있는 공모전·대회 기획 및 운영
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="sub_tab">
-                        <ul class="sub_tab_list">
-                            <li class="sub_tab_item on"><a href="">창의융합과학교육</a></li>
-                            <li class="sub_tab_item"><a href="">디지털 리터러시 교육</a></li>
-                            <li class="sub_tab_item"><a href="">차세대 ESG리더 양성</a></li>
-                            <li class="sub_tab_item"><a href="">주니어 공학교실</a></li>
+                        <div class="sub_tab aniBox ani_bot">
+                            <ul class="sub_tab_list">
+                                <li class="sub_tab_item on"><a href="">창의융합과학교육</a></li>
+                                <li class="sub_tab_item"><a href="">디지털 리터러시 교육</a></li>
+                                <li class="sub_tab_item"><a href="">차세대 ESG리더 양성</a></li>
+                                <li class="sub_tab_item"><a href="">주니어 공학교실</a></li>
+                            </ul>
+                        </div>
+                        <div class="tit_set aniBox ani_bot">
+                            <p class="desc">체계적인 사업 계획과 운영을 통한 지속적으로 성장가능한 프로그램을 제공합니다.</p>
+                        </div>
+                        <ul class="list_bm ">
+                            <li class="list_bm_item aniBox ani_bot">
+                                <div class="img_box">
+                                    <img src="./images/ralral.jpeg" alt="" loading="lazy" >
+                                </div>
+                                <div class="txt_box">
+                                    <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
+                                    <div class="desc">
+                                        대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
+                                    </div>
+                                    <div class="supporter">
+                                        <strong class="label">후원/주최</strong>
+                                        <p>LG화학, 초록우산 어린이재단</p>
+                                    </div>
+                                    <div class="tag_area">
+                                        <div class="tags">
+                                            <button type="button" class="tag_item">찾아가는 교육</button>
+                                            <button type="button" class="tag_item">교재·교구개발</button>
+                                            <button type="button" class="tag_item">과학 캠프·페스티벌</button>
+                                            <button type="button" class="tag_item">공모전·경진대회</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list_bm_item aniBox ani_bot">
+                                <div class="img_box">
+                                    <img src="./images/ralral.jpeg" alt="" loading="lazy" >
+                                </div>
+                                <div class="txt_box">
+                                    <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
+                                    <div class="desc">
+                                        대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
+                                    </div>
+                                    <div class="supporter">
+                                        <strong class="label">후원/주최</strong>
+                                        <p>LG화학, 초록우산 어린이재단</p>
+                                    </div>
+                                    <div class="tag_area">
+                                        <div class="tags">
+                                            <button type="button" class="tag_item">찾아가는 교육</button>
+                                            <button type="button" class="tag_item">교재·교구개발</button>
+                                            <button type="button" class="tag_item">과학 캠프·페스티벌</button>
+                                            <button type="button" class="tag_item">공모전·경진대회</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list_bm_item aniBox ani_bot">
+                                <div class="img_box">
+                                    <img src="./images/ralral.jpeg" alt="" loading="lazy" >
+                                </div>
+                                <div class="txt_box">
+                                    <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
+                                    <div class="desc">
+                                        대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
+                                    </div>
+                                    <div class="supporter">
+                                        <strong class="label">후원/주최</strong>
+                                        <p>LG화학, 초록우산 어린이재단</p>
+                                    </div>
+                                    <div class="tag_area">
+                                        <div class="tags">
+                                            <button type="button" class="tag_item">찾아가는 교육</button>
+                                            <button type="button" class="tag_item">교재·교구개발</button>
+                                            <button type="button" class="tag_item">과학 캠프·페스티벌</button>
+                                            <button type="button" class="tag_item">공모전·경진대회</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list_bm_item aniBox ani_bot">
+                                <div class="img_box">
+                                    <img src="./images/ralral.jpeg" alt="" loading="lazy" >
+                                </div>
+                                <div class="txt_box">
+                                    <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
+                                    <div class="desc">
+                                        대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
+                                    </div>
+                                    <div class="supporter">
+                                        <strong class="label">후원/주최</strong>
+                                        <p>LG화학, 초록우산 어린이재단</p>
+                                    </div>
+                                    <div class="tag_area">
+                                        <div class="tags">
+                                            <button type="button" class="tag_item">찾아가는 교육</button>
+                                            <button type="button" class="tag_item">교재·교구개발</button>
+                                            <button type="button" class="tag_item">과학 캠프·페스티벌</button>
+                                            <button type="button" class="tag_item">공모전·경진대회</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list_bm_item aniBox ani_bot">
+                                <div class="img_box">
+                                    <img src="./images/ralral.jpeg" alt="" loading="lazy" >
+                                </div>
+                                <div class="txt_box">
+                                    <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
+                                    <div class="desc">
+                                        대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
+                                    </div>
+                                    <div class="supporter">
+                                        <strong class="label">후원/주최</strong>
+                                        <p>LG화학, 초록우산 어린이재단</p>
+                                    </div>
+                                    <div class="tag_area">
+                                        <div class="tags">
+                                            <button type="button" class="tag_item">찾아가는 교육</button>
+                                            <button type="button" class="tag_item">교재·교구개발</button>
+                                            <button type="button" class="tag_item">과학 캠프·페스티벌</button>
+                                            <button type="button" class="tag_item">공모전·경진대회</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                    <div class="tit_set aniBox ani_bot">
-                        <p class="desc">체계적인 사업 계획과 운영을 통한 지속적으로 성장가능한 프로그램을 제공합니다.</p>
-                    </div>
-                    <ul class="list_bm">
-                        <li class="list_bm_item">
-                            <div class="img_box">
-                                <img src="./images/ralral.jpeg" alt="" loading="lazy" >
-                            </div>
-                            <div class="txt_box">
-                                <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
-                                <div class="desc">
-                                    대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
-                                </div>
-                                <div class="supporter">
-                                    <strong class="label">후원/주최</strong>
-                                    <p>LG화학, 초록우산 어린이재단</p>
-                                </div>
-                                <div class="tag_area">
-                                    <div class="tags">
-                                        <button type="button" class="tag_item">찾아가는 교육</button>
-                                        <button type="button" class="tag_item">교재·교구개발</button>
-                                        <button type="button" class="tag_item">과학 캠프·페스티벌</button>
-                                        <button type="button" class="tag_item">공모전·경진대회</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list_bm_item">
-                            <div class="img_box">
-                                <img src="./images/ralral.jpeg" alt="" loading="lazy" >
-                            </div>
-                            <div class="txt_box">
-                                <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
-                                <div class="desc">
-                                    대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
-                                </div>
-                                <div class="supporter">
-                                    <strong class="label">후원/주최</strong>
-                                    <p>LG화학, 초록우산 어린이재단</p>
-                                </div>
-                                <div class="tag_area">
-                                    <div class="tags">
-                                        <button type="button" class="tag_item">찾아가는 교육</button>
-                                        <button type="button" class="tag_item">교재·교구개발</button>
-                                        <button type="button" class="tag_item">과학 캠프·페스티벌</button>
-                                        <button type="button" class="tag_item">공모전·경진대회</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list_bm_item">
-                            <div class="img_box">
-                                <img src="./images/ralral.jpeg" alt="" loading="lazy" >
-                            </div>
-                            <div class="txt_box">
-                                <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
-                                <div class="desc">
-                                    대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
-                                </div>
-                                <div class="supporter">
-                                    <strong class="label">후원/주최</strong>
-                                    <p>LG화학, 초록우산 어린이재단</p>
-                                </div>
-                                <div class="tag_area">
-                                    <div class="tags">
-                                        <button type="button" class="tag_item">찾아가는 교육</button>
-                                        <button type="button" class="tag_item">교재·교구개발</button>
-                                        <button type="button" class="tag_item">과학 캠프·페스티벌</button>
-                                        <button type="button" class="tag_item">공모전·경진대회</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list_bm_item">
-                            <div class="img_box">
-                                <img src="./images/ralral.jpeg" alt="" loading="lazy" >
-                            </div>
-                            <div class="txt_box">
-                                <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
-                                <div class="desc">
-                                    대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
-                                </div>
-                                <div class="supporter">
-                                    <strong class="label">후원/주최</strong>
-                                    <p>LG화학, 초록우산 어린이재단</p>
-                                </div>
-                                <div class="tag_area">
-                                    <div class="tags">
-                                        <button type="button" class="tag_item">찾아가는 교육</button>
-                                        <button type="button" class="tag_item">교재·교구개발</button>
-                                        <button type="button" class="tag_item">과학 캠프·페스티벌</button>
-                                        <button type="button" class="tag_item">공모전·경진대회</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="list_bm_item">
-                            <div class="img_box">
-                                <img src="./images/ralral.jpeg" alt="" loading="lazy" >
-                            </div>
-                            <div class="txt_box">
-                                <h3 class="list_bm_tit">LG화학 미래세대 과학 환경교육 Like Green</h3>
-                                <div class="desc">
-                                    대학생 멘토와 과학 환경 분야 전문가가 들려주는 환경 콘서트를 비롯 중학교 자유학기제용 12차시 ESG 교육 프로그램 개발. 연간 전국 중학생 3만명 수혜
-                                </div>
-                                <div class="supporter">
-                                    <strong class="label">후원/주최</strong>
-                                    <p>LG화학, 초록우산 어린이재단</p>
-                                </div>
-                                <div class="tag_area">
-                                    <div class="tags">
-                                        <button type="button" class="tag_item">찾아가는 교육</button>
-                                        <button type="button" class="tag_item">교재·교구개발</button>
-                                        <button type="button" class="tag_item">과학 캠프·페스티벌</button>
-                                        <button type="button" class="tag_item">공모전·경진대회</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
 
+                    </div>
                 </div>
             </section>
 
@@ -250,20 +274,28 @@
         <!-- // 과문홈 하단 info -->
     </div>
     <script>
+
         $(function(){
             const bm_kw = $('.bm_kw_wrap');
+            const bm_kw_c = $('.bm_kw');
             let hd_h = $('#header').outerHeight();
             let bm_pos = $('.bm_kw_sec').offset().top;
             $(window).on('load scroll resize',function(){
                 hd_h = $('#header').outerHeight();
-                bm_pos = $('.sub_tab').offset().top;
-                console.log(bm_pos);
+                bm_pos = $('.bm_kw_sec').offset().top;
+                //console.log(bm_pos);
 
                 if($(this).scrollTop() > bm_pos - hd_h - 20){
-                    bm_kw.addClass('fixed');`
+                    bm_kw.addClass('fixed');
                 }else{
                     bm_kw.removeClass('fixed');
                 }
+            });
+            $('.btn_bm_kw').on('click',function(){
+                bm_kw_c.toggleClass('on');
+            });
+            $('.tag_item').on('click',function(){
+                bm_kw_c.addClass('on');
             });
         });
     </script>

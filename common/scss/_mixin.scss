@@ -9,6 +9,12 @@
     }
 }
 
+@mixin pc_h {
+    @media (max-width: #{$breakpoint-pc_h}) {
+        @content;
+    }
+}
+
 @mixin tablet {
     @media (max-width: #{$breakpoint-t}) {
         @content;
