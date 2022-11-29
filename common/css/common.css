@@ -1371,6 +1371,9 @@
   .sub_sec.bg_sblue::after {
     height: 75%;
   }
+  .sub_sec.ty_contact {
+    padding: 30px 0 80px;
+  }
   .inner {
     padding: 0 20px;
   }
@@ -1527,5 +1530,73 @@
   }
   .dsc_process_item_txt {
     font-size: 14px;
+  }
+  .contact_form {
+    padding: 23px 20px 25px;
+  }
+  .contact_form_item {
+    display: block;
+  }
+  .contact_form_tit {
+    display: block;
+    width: auto;
+    font-size: 16px;
+    line-height: 1.25;
+    margin-bottom: 10px;
+  }
+  .contact_form_input {
+    font-size: 14px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 15px;
+    border-radius: 18px;
+  }
+  .contact_form_ta {
+    padding: 10px 15px;
+    font-size: 14px;
+    height: 200px;
+  }
+  .btn_area.ty_bot {
+    margin-top: 25px;
+  }
+  .btn.btn_submit {
+    font-size: 18px;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    line-height: 48px;
+  }
+  .dsc_bot {
+    padding: 20px 0;
+  }
+  .dsc_bot_info {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .dsc_bot_info_item {
+    margin-left: 0;
+    margin-top: 0;
+    font-size: 14px;
+  }
+  .dsc_bot_info_item + .dsc_bot_info_item {
+    margin-top: 15px;
+  }
+  .dsc_bot_info_item:first-child {
+    display: block;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  .dsc_bot_info_item:first-child strong {
+    margin-right: 0;
+    padding-right: 0;
+  }
+  .dsc_bot_info_item:first-child strong::after {
+    display: none;
+  }
+  .dsc_bot_info_item:first-child p {
+    margin-top: 4px;
+  }
+  .dsc_bot_info_item p {
+    color: #666;
   }
 }

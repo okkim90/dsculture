@@ -1032,6 +1032,9 @@
                 height: 75%;
             }
         }
+        &.ty_contact {
+            padding: 30px 0 80px;
+        }
     }
     .inner {
         padding: 0 20px;
@@ -1224,5 +1227,84 @@
                 font-size: 14px;
             }
         }
+    }
+
+    .contact_form {
+        padding: 23px 20px 25px;
+        &_item {
+            display: block;
+        }
+        &_tit {
+            display: block;
+            width: auto;
+            font-size: 16px;
+            line-height: 1.25;
+            margin-bottom: 10px;
+        }
+        &_input {
+            font-size: 14px;
+            height: 36px;
+            line-height: 36px;
+            padding: 0 15px;
+            border-radius: 18px;
+        }
+        &_ta {
+            padding: 10px 15px;
+            font-size: 14px;
+            height: 200px;
+        }
+    }
+    .btn_area {
+        &.ty_bot {
+            margin-top: 25px;
+        }
+    }
+    .btn {
+        &.btn_submit {
+            font-size: 18px;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            line-height: 48px;
+        }
+    }
+    .dsc_bot {
+        padding: 20px 0;
+        &_info {
+            margin-left: 0;
+            margin-top: 0;
+            &_item {
+
+                margin-left: 0;
+                margin-top: 0;
+                font-size: 14px;
+                & + & {
+                    margin-top: 15px;
+
+
+                }
+
+                &:first-child {
+                    display: block;
+                    border-bottom: 1px solid #eee;
+                    padding-bottom: 15px;
+                    strong {
+                        margin-right: 0;
+                        padding-right: 0;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                    p {
+                        margin-top: 4px;
+                    }
+                }
+
+                p {
+                    color: #666;
+                }
+            }
+        }
+
     }
 }
