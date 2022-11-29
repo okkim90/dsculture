@@ -112,31 +112,5 @@
         <button type="button" class="btn_top" onclick="to_top()"><span class="blind">상단으로 이동</span></button>
         <!-- // 과문홈 하단 info -->
     </div>
-    <script>
-        $(function(){
-            const bm_kw = $('.bm_kw_wrap');
-            const bm_kw_c = $('.bm_kw');
-            let hd_h = $('#header').outerHeight();
-            let bm_pos = $('.bm_kw_sec').offset().top;
-            $(window).on('load scroll resize',function(){
-                hd_h = $('#header').outerHeight();
-                bm_pos = $('.bm_kw_sec').offset().top;
-                console.log(bm_pos);
-
-                if($(this).scrollTop() > bm_pos - hd_h - 20){
-                    bm_kw.addClass('fixed');
-                }else{
-                    bm_kw.removeClass('fixed');
-                }
-            });
-
-            $('.btn_bm_kw').on('click',function(){
-                bm_kw_c.toggleClass('on');
-            });
-            $('.tag_item').on('click',function(){
-                bm_kw_c.addClass('on');
-            });
-        });
-    </script>
 </body>
 </html>
