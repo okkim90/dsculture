@@ -1592,6 +1592,9 @@
     margin-top: 0;
   }
   .dsc_bot_info_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: 0;
     margin-top: 0;
     font-size: 14px;
