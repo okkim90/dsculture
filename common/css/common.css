@@ -455,6 +455,10 @@
   background-color: #222;
 }
 
+.body_main {
+  background-color: #000;
+}
+
 .container.sub {
   padding-top: 120px;
 }
@@ -535,6 +539,9 @@
   color: #fff;
   z-index: 10;
   text-align: center;
+}
+.main_txt .m_only {
+  display: none;
 }
 .main_txt_tit {
   font-size: 60px;
@@ -1360,6 +1367,17 @@
   }
   #container.sub.pb0 {
     padding-bottom: 0;
+  }
+  .main_txt .m_only {
+    display: block;
+  }
+  .main_txt_tit {
+    font-size: 36px;
+    line-height: 1.4;
+  }
+  .main_txt_desc {
+    margin-top: 1em;
+    font-size: 19px;
   }
   .sub_sec {
     padding-top: 30px;

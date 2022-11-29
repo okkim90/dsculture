@@ -166,7 +166,9 @@
     }
 }
 
-
+.body_main {
+    background-color: #000;
+}
 .container {
     &.sub {
         padding-top: 120px;
@@ -245,6 +247,9 @@
     color: #fff;
     z-index: 10;
     text-align: center;
+    .m_only {
+        display: none;
+    }
     &_tit {
         font-size: 60px;
         line-height: 1.6;
@@ -1021,6 +1026,23 @@
             }
         }
     }
+
+    .main_txt {
+        .m_only {
+            display: block;
+        }
+        &_tit {
+            font-size: 36px;
+            line-height: 1.4;
+        }
+        &_desc {
+            margin-top: 1em;
+            font-size: 19px;
+        }
+    }
+
+
+
     .sub_sec {
         padding-top: 30px;
         padding-bottom: 50px;
@@ -1039,6 +1061,8 @@
     .inner {
         padding: 0 20px;
     }
+
+
 
     .tit_set {
         margin-bottom: 30px;
