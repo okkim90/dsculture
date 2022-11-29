@@ -54,18 +54,28 @@
         <!-- //header -->
         <div id="container" class="container main">
             <div class="bg_box">
-                <video autoplay muted loop playsinline>
+                <!-- <video autoplay muted loop playsinline>
                     <source src="./images/video.mp4" type="video/mp4">
-                </video>
+                </video> -->
             </div>
             <div class="main_txt">
-                <h2 class="main_txt_tit aniBox ani_bot">미래세대를 위한 <br class="m_only"> 사회공헌 솔루션</h2>
+                <h2 class="main_txt_tit aniBox ani_bot"><b>미래세대</b>를 위한 <br class="m_only"> <b>사회공헌 솔루션</b></h2>
                 <p class="main_txt_desc aniBox ani_bot delay_3">
-                    독보적인 교육 콘텐츠 기획력과  <br class="m_only"> 탄탄한 운영 노하우로 <br> 기업의 사회공헌 비전을  <br class="m_only"> 함께 만들어 갑니다.
+                    독보적인 교육 콘텐츠 기획력과  <br class="m_only"> 탄탄한 운영 노하우로 <br class="pc_only"> 기업의 <br class="m_only"> 사회공헌 비전을 함께 만들어 갑니다.
                 </p>
             </div>
         </div>
     </div>
     <script type="text/javascript" src="./common/js/common.js"></script>
+    <script>
+        $(function(){
+            $('.nav').on('mouseenter',function(){
+                $('.header').addClass('hover')
+            });
+            $('.nav').on('mouseleave',function(){
+                $('.header').removeClass('hover')
+            });
+        });
+    </script>
 </body>
 </html>

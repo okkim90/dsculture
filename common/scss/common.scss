@@ -26,6 +26,16 @@
     border-bottom: 1px solid rgba(#fff, .3);
     z-index: 9999;
 
+    &.hover {
+        background-color: #fff;
+        .logo {
+            background-image: url(../../images/logo.svg);
+        }
+        .nav_link {
+            color: #222;
+        }
+    }
+
     .logo {
         width: 184px;
         height: 66px;
@@ -35,7 +45,7 @@
         background-size: contain;
         position: relative;
         z-index: 10;
-        transition: background-image .4s ease-in-out;
+        transition: background-image .2s ease-in-out;
     }
 
     .btn_nav {
@@ -50,11 +60,11 @@
         .bar_box {
             position: relative;
             width: 21px;
-            height: 19px;
+            height: 18px;
             .bar {
                 position: absolute;
                 width: 100%;
-                height: 3px;
+                height: 2px;
                 background-color: #fff;
                 border-radius: 2px;
                 right: 0;
@@ -103,20 +113,20 @@
             line-height: 120px;
             color: #fff;
             transition: color .2s ease-in-out;
-            font-weight: 500;
+            font-weight: normal;
             &::after {
                 content: '';
                 position: absolute;
                 left: 0;
-                bottom: 0;
+                bottom: -1px;
                 width: 0%;
-                height: 3px;
-                background-color: #ff7328;
+                height: 4px;
+                background-color: #5032b7;
                 transition: width .2s ease-in-out;
-
             }
             &:hover {
-                color: #ff7328;
+                font-weight: bold;
+                color: #5032b7;
                 &::after {
                     width: 100%;
                 }
@@ -135,7 +145,7 @@
         background-color: #fff;
         .nav {
             &_link {
-                color: #000;
+                color: #222;
                 &::after {
                     background-color: #5032b7;
                 }
@@ -144,6 +154,7 @@
                 }
                 &.on {
                     color: #5032b7;
+                    font-weight: bold;
                 }
             }
         }
@@ -220,6 +231,10 @@
     height: 100%;
     left: 0;
     top: 0;
+    background-image: url(../../images/main.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     &::before {
         content: '';
         position: absolute;
@@ -254,6 +269,10 @@
         font-size: 60px;
         line-height: 1.6;
         letter-spacing: -0.01em;
+        font-weight: normal;
+        b {
+            font-weight: bold;
+        }
     }
     &_desc {
         font-size: 30px;
@@ -878,7 +897,13 @@
 @include tablet {
     .header {
         padding: 0 30px;
+        &.hover {
+            background-color: transparent;
+            .logo {
+                background-image: url(../../images/logo_w.svg);
+            }
 
+        }
         .btn_nav {
             display: flex;
         }
@@ -924,7 +949,7 @@
                 font-size: 20px;
                 line-height: 67px;
                 color: #222;
-
+                font-weight: bold;
                 &::after {
                     display: none;
                 }
@@ -933,7 +958,7 @@
                 display: block;
                 font-size: 20px;
                 line-height: 67px;
-                font-weight: 500;
+                font-weight: bold;
                 color: #222;
                 position: relative;
                 width: 100%;
@@ -984,12 +1009,27 @@
             }
         }
     }
+
+    .main_txt {
+        &_tit {
+            font-size: 50px;
+        }
+        &_desc {
+            font-size: 26px;
+        }
+    }
 }
 
 @include mobile {
     .header {
         padding: 0 20px;
         height: 60px;
+        &.hover {
+            .logo {
+                background-image: url(../../images/logo_w_m.svg);
+            }
+
+        }
         .logo {
             width: 170px;
             height: 60px;
@@ -1028,16 +1068,27 @@
     }
 
     .main_txt {
+        position: absolute;
+        transform: translateY(0);
+        text-align: left;
+        padding: 0 35px;
+        box-sizing: border-box;
+        top: 100px;
         .m_only {
             display: block;
         }
+        .pc_only {
+            display: none;
+        }
         &_tit {
-            font-size: 36px;
+            font-size: 26px;
             line-height: 1.4;
+            letter-spacing: -0.065px;
         }
         &_desc {
             margin-top: 1em;
-            font-size: 19px;
+            font-size: 14px;
+            letter-spacing: -0.35px;
         }
     }
 
@@ -1079,6 +1130,7 @@
         .desc {
             font-size: 14px;
             margin-top: 10px;
+            text-align: left;
         }
     }
 
