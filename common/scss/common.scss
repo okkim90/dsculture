@@ -235,6 +235,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    transform: scale(1.2);
+    transition: transform 3s ease-out;
+    &.gogo {
+        transform: scale(1);
+        &::before {
+            opacity: 0;
+        }
+    }
     &::before {
         content: '';
         position: absolute;
@@ -242,7 +250,10 @@
         height: 100%;
         left: 0;
         top: 0;
-        background-color: rgba(#000, .4);
+        background-color: #000;
+        opacity: 0.6;
+        transition: opacity 1s ease-in-out;
+
     }
     img, video {
         width: 100%;
@@ -550,7 +561,7 @@
         color: map-get($colors, purple);
         font-size: 24px;
         line-height: 1.42;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
     }
     &_item {
         margin-top: 30px;
@@ -558,14 +569,14 @@
             display: block;
             font-size: 20px;
             line-height: 1.7;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             color: #222;
         }
         &_txt {
             display: block;
             font-size: 18px;
             line-height: 1.56;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             color: #666;
             margin-top: 6px;
         }
@@ -594,7 +605,7 @@
             justify-content: center;
             font-size: 22px;
             line-height: 1.5;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             padding: 10px;
             text-align: center;
             color: #666;
@@ -634,14 +645,14 @@
                 display: block;
                 font-size: 22px;
                 line-height: 1.36;
-                letter-spacing: -0.03em;
+                letter-spacing: -0.01em;
                 color: #222;
             }
             .desc {
                 margin-top: 7px;
                 font-size: 18px;
                 line-height: 1.44;
-                letter-spacing: -0.03em;
+                letter-spacing: -0.01em;
                 color: #666;
             }
             .supporter {
@@ -649,7 +660,7 @@
                 margin-top: 15px;
                 font-size: 18px;
                 line-height: 1.56;
-                letter-spacing: -0.03em;
+                letter-spacing: -0.01em;
                 color: #666;
                 .label {
                     position: relative;
@@ -692,7 +703,7 @@
             margin-top: 6px;
             line-height: 35px;
             font-size: 15px;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
             border-radius: 18px;
         }
     }
@@ -807,7 +818,7 @@
         line-height: 1.5;
         font-weight: bold;
         color: $c_key;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
     }
     &_ico {
         margin-right: 10px;
@@ -816,7 +827,7 @@
         margin-top: 15px;
         font-size: 14px;
         color: #777;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
         line-height: 1.5;
     }
 }
@@ -1029,6 +1040,9 @@
                     font-size: 15px;
                     line-height: 2.4;
                     letter-spacing: -0.03em;
+                    &.on {
+                        font-weight: bold;
+                    }
                 }
             }
         }

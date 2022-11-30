@@ -526,6 +526,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: -webkit-transform 3s ease-out;
+  transition: -webkit-transform 3s ease-out;
+  transition: transform 3s ease-out;
+  transition: transform 3s ease-out, -webkit-transform 3s ease-out;
+}
+.bg_box.gogo {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.bg_box.gogo::before {
+  opacity: 0;
 }
 .bg_box::before {
   content: "";
@@ -534,7 +547,10 @@
   height: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #000;
+  opacity: 0.6;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 .bg_box img, .bg_box video {
   width: 100%;
@@ -897,7 +913,7 @@
   color: #3b1e9e;
   font-size: 24px;
   line-height: 1.42;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .dsc_process_item {
   margin-top: 30px;
@@ -906,14 +922,14 @@
   display: block;
   font-size: 20px;
   line-height: 1.7;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: #222;
 }
 .dsc_process_item_txt {
   display: block;
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   color: #666;
   margin-top: 6px;
 }
@@ -951,7 +967,7 @@
           justify-content: center;
   font-size: 22px;
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   padding: 10px;
   text-align: center;
   color: #666;
@@ -997,14 +1013,14 @@
   display: block;
   font-size: 22px;
   line-height: 1.36;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: #222;
 }
 .list_bm_item .txt_box .desc {
   margin-top: 7px;
   font-size: 18px;
   line-height: 1.44;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: #666;
 }
 .list_bm_item .txt_box .supporter {
@@ -1014,7 +1030,7 @@
   margin-top: 15px;
   font-size: 18px;
   line-height: 1.56;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   color: #666;
 }
 .list_bm_item .txt_box .supporter .label {
@@ -1054,7 +1070,7 @@
   margin-top: 6px;
   line-height: 35px;
   font-size: 15px;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   border-radius: 18px;
 }
 
@@ -1172,7 +1188,7 @@
   line-height: 1.5;
   font-weight: bold;
   color: #5032b7;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 .bm_kw_ico {
   margin-right: 10px;
@@ -1181,7 +1197,7 @@
   margin-top: 15px;
   font-size: 14px;
   color: #777;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   line-height: 1.5;
 }
 
@@ -1390,6 +1406,9 @@
     font-size: 15px;
     line-height: 2.4;
     letter-spacing: -0.03em;
+  }
+  .header .nav_dep2_link.on {
+    font-weight: bold;
   }
   .inner {
     padding: 0 30px;

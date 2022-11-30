@@ -10,7 +10,7 @@ $.fn.isInViewport = function() {
     var elementBottom = elementTop + $(this).outerHeight();
     var viewportTop = $(window).scrollTop();
     var viewportBottom = viewportTop + $(window).height();
-    return (elementBottom > viewportTop + (vh/12))  && (elementTop < viewportBottom - (vh/12)) ;
+    return (elementBottom > viewportTop)  && (elementTop < viewportBottom ) ;
 };
 
 $(function(){
@@ -69,4 +69,5 @@ $('.btn_nav').on('click',function(){
 
 });
 
+console.log($('.list_bm_item').length)
 });
